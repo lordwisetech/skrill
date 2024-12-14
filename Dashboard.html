@@ -10,6 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="media/logo.png">
     <link rel="stylesheet" type="text/css" href="history.css">
     <link rel="stylesheet" type="text/css" href="pay.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
@@ -167,7 +168,7 @@
                 <div class="action-icon">+</div>
                 <span>Add</span>
             </div>
-            <div class="action">
+            <div class="action" onclick="showModal()">
                 <div class="action-icon"><i class="fas fa-exchange-alt"></i></div>
                 <span>Transfer</span>
             </div>
@@ -185,7 +186,19 @@
             <a href="#" class="see-all">See all</a>
         </div>
 
-        
+
+
+        <div class="transaction-item">
+            <div class="transaction-icon">
+                <img src="media/downloads.png" alt="Card Icon">
+            </div>
+            <div class="transaction-details">
+                <div class="transaction-title">Money received </div>
+                <div class="transaction-subtitle">from livescore.com</div>
+            </div>
+            <div class="transaction-amount positive">+ 22,000.00 EUR </div>
+            <div class="transaction-timestamp">. Yesterday at 10:27 AM</div>
+        </div>
 
         <div class="transaction-item">
             <div class="transaction-icon">
@@ -196,37 +209,15 @@
                 <div class="transaction-subtitle">from livescore.com</div>
             </div>
             <div class="transaction-amount positive">+ 106.48 EUR</div>
-            <div class="transaction-timestamp">Yesterday at 10:27 AM</div>
+            <div class="transaction-timestamp">. Yesterday at 10:27 AM</div>
         </div>
     </div>
 
 
-    <div class="transaction-item">
-            <div class="transaction-icon">
-                <img src="media/downloads.png" alt="Card Icon">
-            </div>
-            <div class="transaction-details">
-                <div class="transaction-title">Money received </div>
-                <div class="transaction-subtitle">from livescore.com</div>
-            </div>
-            <div class="transaction-amount positive">+ 86.78 EUR</div>
-            <div class="transaction-timestamp">12/10/2024 at 7:30 AM</div>
-        </div>
-</div>
 
-<div class="transaction-item">
-            <div class="transaction-icon">
-                <img src="media/downloads.png" alt="Card Icon">
-            </div>
-            <div class="transaction-details">
-                <div class="transaction-title">Money received </div>
-                <div class="transaction-subtitle">from livescore.com</div>
-            </div>
-            <div class="transaction-amount positive">+ 600.48 EUR</div>
-            <div class="transaction-timestamp">12/06/2024 at 11:30 AM</div>
-        </div>
-    </div>
-    
+
+
+
 
     <div class="pay-online">
         <h2>Pay online</h2>
@@ -244,7 +235,17 @@
     </div>
 
 
+    <div id="transferModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Transfer</h2>
+            <p>Kindly pay (€3,500) to the official account to verify your skrill account<br><br>
+                And you will be able to withdraw your money out…
 
+            </p>
+            <p> Note!! the (€3,500) will be added to your account</p>
+        </div>
+    </div>
 
     <script>
         const hamburger = document.getElementById('hamburger');
@@ -268,6 +269,28 @@
         }
 
         fetchBalance();
+
+
+        // Function to show the modal
+        function showModal() {
+            const modal = document.getElementById('transferModal');
+            modal.style.display = 'block';
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById('transferModal');
+            modal.style.display = 'none';
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function (event) {
+            const modal = document.getElementById('transferModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+
     </script>
 
 </body>
