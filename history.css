@@ -1,0 +1,90 @@
+.transaction-history {
+    width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background: rgba(151, 108, 151, 0.1);
+    /* Light purple tint with transparency */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(211, 192, 192, 0.1);
+    backdrop-filter: blur(10px);
+    /* Optional: Adds a subtle blur effect */
+}
+
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-header span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.see-all {
+    font-size: 14px;
+    color: #7d157f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+.transaction-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.transaction-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.transaction-subtitle {
+    font-size: 12px;
+    color: #777;
+}
+
+.transaction-amount {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.transaction-amount.positive {
+    color: green;
+}
+
+.transaction-amount.negative {
+    color: red;
+}
+
+.transaction-timestamp {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    margin-left: auto;
+}

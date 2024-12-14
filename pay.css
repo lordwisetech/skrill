@@ -1,0 +1,57 @@
+.pay-online {
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.pay-online h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pay-online p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.partner-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partner-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.partner-card span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    margin-right: 376px;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

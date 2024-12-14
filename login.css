@@ -1,0 +1,188 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #800080, #4b0082);
+    color: #fff;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav .logo h1 {
+    color: #800080;
+    font-size: 20px;
+    margin: 0;
+}
+
+.top-nav .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-dropdown,
+.user-icon {
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language-dropdown i,
+.user-icon i {
+    margin-right: 5px;
+}
+
+/* Login Container */
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-box p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-box a {
+    color: #800080;
+    text-decoration: none;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: #f8f8f8;
+    /* Light background color */
+    padding: 10px;
+    /* Adjust as needed */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 100%;
+    /* Full width */
+    box-sizing: border-box;
+    /* Include padding in the width */
+    font-size: 16px;
+    /* Adjust font size */
+}
+
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #800080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background: #4b0082;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(180deg, #800080, #4b0082);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Mobile View - White Background */
+@media (max-width: 768px) {
+    body {
+        background: #fff;
+        color: #333;
+    }
+
+    .login-container {
+        background: #fff;
+    }
+
+    footer {
+        background: white;
+        color: black;
+    }
+
+    footer ul li a {
+        color: black;
+    }
+}

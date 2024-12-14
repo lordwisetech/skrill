@@ -1,0 +1,93 @@
+.balance-card {
+    width: 400px;
+    /* Wider card */
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    /* Center the card */
+    position: relative;
+}
+
+
+
+.balance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.icon-eye {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.balance-info {
+    margin-bottom: 30px;
+}
+
+.currency-section {
+    display: flex;
+    /* Align items horizontally */
+    align-items: center;
+    /* Vertically align the icon and text */
+    justify-content: center;
+    /* Center them within the container */
+    margin-bottom: 10px;
+    gap: 5px;
+    /* Add spacing between the icon and text */
+}
+
+
+.icon-euro {
+    width: 38px;
+    /* Adjust icon size */
+    height: 40px;
+}
+
+.currency-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: black;
+}
+
+.balance {
+    font-size: 2em;
+    color: #000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.balance-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #7d157f;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.action:hover {
+    background: black;
+    color: #fff;
+}
+
+.action-icon {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
